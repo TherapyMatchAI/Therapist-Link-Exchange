@@ -42,8 +42,6 @@
     <section class="section">
       <div class="card">
         <h3>Submission Form</h3>
-        <p>Paste your Google Form iframe below, or in Google Sites use <span class="kbd">Insert → Forms</span>.</p>
-        <div class="callout small">Tip: include a checkbox — “I agree to place two links during onboarding.”</div>
 
         <!-- Your Google Form (dynamic height) -->
         <div style="margin-top:14px;border:1px solid var(--border);border-radius:12px;overflow:hidden">
@@ -73,8 +71,7 @@
       const doc = iframe.contentWindow.document;
       iframe.style.height = doc.body.scrollHeight + "px";
     } catch(e) {
-      // fallback: fixed height
-      iframe.style.height = "860px";
+      iframe.style.height = "860px"; // fallback
     }
   }
 </script>
