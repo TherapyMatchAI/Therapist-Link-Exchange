@@ -1,23 +1,21 @@
-### `how-it-works.html`
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>How It Works — Therapist Resource Exchange</title>
+  <title>How It Works — Therapist Link Exchange</title>
   <link rel="stylesheet" href="./styles.css" />
   <script defer src="./script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="page-how">
 <div class="site-wrap">
 <header class="site-header">
   <a class="brand" href="index.html">
     <span class="brand-logo" aria-hidden="true">✦</span>
-    <span class="brand-text">Therapist Resource Exchange</span>
+    <span class="brand-text">Therapist Link Exchange</span>
   </a>
   <nav class="site-nav">
     <a href="index.html">Home</a>
@@ -25,25 +23,27 @@
     <a href="submit.html">Submit Your Site</a>
   </nav>
 </header>
+
 <main>
 <section class="hero">
   <div class="hero-card">
     <h1>How the Exchange Works</h1>
-    <p class="lead">We use a 3‑way (ABC) model to avoid direct swaps and keep the network stable.</p>
-    <svg width='260' height='120' viewBox='0 0 260 120' xmlns='http://www.w3.org/2000/svg' style='margin-top:20px'>
-      <circle cx='40' cy='60' r='24' fill='var(--brand)' /><text x='40' y='66' text-anchor='middle' fill='#08101f' font-weight='700' font-size='18'>A</text>
-      <circle cx='130' cy='20' r='24' fill='var(--accent)' /><text x='130' y='26' text-anchor='middle' fill='#08101f' font-weight='700' font-size='18'>B</text>
-      <circle cx='220' cy='60' r='24' fill='var(--brand)' /><text x='220' y='66' text-anchor='middle' fill='#08101f' font-weight='700' font-size='18'>C</text>
-      <path d='M64 55 L106 28' stroke='var(--text)' stroke-width='2' marker-end='url(#arrow)'/>
-      <path d='M154 28 L196 55' stroke='var(--text)' stroke-width='2' marker-end='url(#arrow)'/>
-      <path d='M196 65 L64 65' stroke='var(--text)' stroke-width='2' marker-end='url(#arrow)'/>
+    <p class="lead">We use a 3-way (ABC) model to avoid direct swaps and keep the network stable.</p>
+
+    <svg width="260" height="120" viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg" style="margin-top:20px">
+      <circle cx="40" cy="60" r="24" fill="var(--brand)" /><text x="40" y="66" text-anchor="middle" fill="#08101f" font-weight="700" font-size="18">A</text>
+      <circle cx="130" cy="20" r="24" fill="var(--accent)" /><text x="130" y="26" text-anchor="middle" fill="#08101f" font-weight="700" font-size="18">B</text>
+      <circle cx="220" cy="60" r="24" fill="var(--brand)" /><text x="220" y="66" text-anchor="middle" fill="#08101f" font-weight="700" font-size="18">C</text>
+      <path d="M64 55 L106 28" stroke="var(--text)" stroke-width="2" marker-end="url(#arrow)"/>
+      <path d="M154 28 L196 55" stroke="var(--text)" stroke-width="2" marker-end="url(#arrow)"/>
+      <path d="M196 65 L64 65" stroke="var(--text)" stroke-width="2" marker-end="url(#arrow)"/>
       <defs>
-        <marker id='arrow' markerWidth='10' markerHeight='10' refX='6' refY='3' orient='auto' markerUnits='strokeWidth'>
-          <path d='M0,0 L0,6 L9,3 z' fill='var(--text)'/>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="var(--text)"/>
         </marker>
       </defs>
     </svg>
-    <p class='small' style='margin-top:10px;opacity:.9'>A links to B → B links to C → C links back to A. No direct swaps.</p>
+    <p class="small" style="margin-top:10px;opacity:.9">A links to B → B links to C → C links back to A. No direct swaps.</p>
   </div>
 </section>
 
@@ -59,30 +59,32 @@
     </div>
     <div class="card">
       <h3>3) Maintain one link</h3>
-      <p>After onboarding, you only maintain <strong>one outbound link</strong> to your active match. If a site drops, we’ll re‑pair the chain.</p>
+      <p>After onboarding, you only maintain <strong>one outbound link</strong> to your active match. If a site drops, we’ll re-pair the chain.</p>
     </div>
   </div>
 </section>
 
+<!-- NEW: Benefits section (replaces Best Practices) -->
 <section class="section">
-  <h2>Best practices</h2>
+  <h2>Benefits of Earning Links</h2>
   <ul class="list">
-    <li class="item"><div class="icon">✓</div><div>Add short blurbs around links (2–3 sentences) to provide context.</div></li>
-    <li class="item"><div class="icon">✓</div><div>Use descriptive anchor text like “EMDR Therapy in Los Angeles”.</div></li>
-    <li class="item"><div class="icon">✓</div><div>Place links on a relevant page (resources, recommended providers, or a blog post).</div></li>
+    <li class="item"><div class="icon">↑</div><div><strong>Higher visibility in Google</strong> — quality links help your pages rank for service + location terms.</div></li>
+    <li class="item"><div class="icon">★</div><div><strong>Domain authority growth</strong> — steady links from real practices improve trust signals over time.</div></li>
+    <li class="item"><div class="icon">👥</div><div><strong>Referral traffic</strong> — visitors click through from partner resource pages and find your services.</div></li>
+    <li class="item"><div class="icon">🔗</div><div><strong>Safer than direct swaps</strong> — the ABC structure avoids obvious reciprocal patterns.</div></li>
+    <li class="item"><div class="icon">⚖️</div><div><strong>Balanced & curated</strong> — pairings are moderated by specialty and geography for relevance.</div></li>
+    <li class="item"><div class="icon">⏱</div><div><strong>Low maintenance</strong> — after onboarding, you maintain just one outbound link.</div></li>
   </ul>
 </section>
 
 <section class="callout section">
-  <strong>Note:</strong> Participation is therapist‑only. We curate submissions and may adjust pairings to keep chains balanced by location/specialty.
+  <strong>Note:</strong> Participation is therapist-only. We curate submissions and may adjust pairings to keep chains balanced by location/specialty.
 </section>
 </main>
+
 <footer class="site-footer">
-  <p>© Therapist Resource Exchange · Built for the counseling community</p>
+  <p>© Therapist Link Exchange · Built for the counseling community</p>
 </footer>
 </div>
 </body>
 </html>
-```
-
----
