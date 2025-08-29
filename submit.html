@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    iframe.form-embed {width:100%; border:none;}
+  </style>
 </head>
 <body>
 <div class="site-wrap">
@@ -42,10 +45,11 @@
         <p>Paste your Google Form iframe below, or in Google Sites use <span class="kbd">Insert → Forms</span>.</p>
         <div class="callout small">Tip: include a checkbox — “I agree to place two links during onboarding.”</div>
 
-        <!-- Your actual Google Form -->
+        <!-- Your Google Form (dynamic height) -->
         <div style="margin-top:14px;border:1px solid var(--border);border-radius:12px;overflow:hidden">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-y6IC0DV11Gl1sznvqWpheurYXCgW9WDFeuCERHO0eFwRrw/viewform?embedded=true"
-                  width="100%" height="860" frameborder="0" marginheight="0" marginwidth="0">
+          <iframe class="form-embed"
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSc-y6IC0DV11Gl1sznvqWpheurYXCgW9WDFeuCERHO0eFwRrw/viewform?embedded=true"
+                  onload="resizeIframe(this)">
             Loading…
           </iframe>
         </div>
@@ -62,5 +66,17 @@
     <p>© Therapist Link Exchange · Built for the counseling community</p>
   </footer>
 </div>
+
+<script>
+  function resizeIframe(iframe) {
+    try {
+      const doc = iframe.contentWindow.document;
+      iframe.style.height = doc.body.scrollHeight + "px";
+    } catch(e) {
+      // fallback: fixed height
+      iframe.style.height = "860px";
+    }
+  }
+</script>
 </body>
 </html>
