@@ -1,0 +1,1 @@
+console.log('Therapist Resource Exchange loaded');
